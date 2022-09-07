@@ -46,8 +46,10 @@ nav {
 
 }
 a {
-    text-decoration:none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
     color: var(--bg-color-white);
+
 
 }
 
@@ -81,6 +83,7 @@ header h2 {
 }
 .container section {
     width: 50%;
+    height: 504px;
 }
 
 .description p {
@@ -90,7 +93,7 @@ header h2 {
 
 .image img {
     width: 100%;
-    max-height: 430px;
+    height: 504px;
 
 }
 .description {
@@ -136,9 +139,20 @@ header h2 {
 
 #photography {
     background: url('/images/desktop/image-photography.jpg');
+    background-size: cover;
+    
     height: 430px;
     display: flex;
     align-items: flex-end;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    max-width: 350px;
 }
 .client-testimonials {
     width: 100%;
@@ -150,10 +164,11 @@ header h2 {
     gap: 5rem;
 }
 .client-testimonials h3 {
-    font-size: 3.2rem;
+    font-size: 1.6em;
     text-transform: uppercase;
     color: var(--bg-color-grayish-blue);
     font-family: 'Fraunces', sans-serif;
+    letter-spacing: 0.3rem;
 }
 .clients-container {
     width: 100%;
@@ -178,9 +193,13 @@ header h2 {
     max-width: 300px;
 }
 .client-name {
-    font-weight: bolder;
+    font-weight: 900;
     font-family: 'Fraunces';
+    font-size: 1.6rem;
 
+}
+.client-function {
+    font-size: 1.2rem;
 }
 .client img {
     width: 55px;
@@ -223,3 +242,10 @@ footer {
     max-width: 306.5px;
 }
 
+
+
+@media screen and (max-width: 480px) {
+
+
+
+}
